@@ -171,7 +171,7 @@ public class StockColumnInfoGenerator {
      *
      * @return
      */
-    public static ColumnInfo<? extends Object, ? extends Object>[] generate(StoredConfig storedConfig) {
+    public static ColumnInfo<?, ?>[] generate(StoredConfig storedConfig) {
         if (storedConfig.getIsSimple()) {
             return new ColumnInfo[]{CODE_COLUMN_INFO, NAME_COLUMN_INFO, LAST_PRICE_COLUMN_INFO, CHANGE_PERCENT_COLUMN_INFO};
         } else {
@@ -182,7 +182,7 @@ public class StockColumnInfoGenerator {
 
     private static void renderColor(Component component, Stock stock) {
         if (BigDecimal.ZERO.compareTo(stock.getChangePercent()) < 0) {
-            component.setForeground(JBColor.decode("#ff0000"));
+            component.setForeground(JBColor.decode("#dd0000"));
         } else if (BigDecimal.ZERO.compareTo(stock.getChangePercent()) > 0) {
             component.setForeground(JBColor.decode("#009944"));
         } else {

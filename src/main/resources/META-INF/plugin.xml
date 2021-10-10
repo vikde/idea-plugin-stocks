@@ -3,13 +3,20 @@
     <name>Stocks</name>
     <vendor email="vikde@qq.com" url="https://github.com/vikde">vikde</vendor>
 
-    <description>Stocks是一个可以在idea里面边写代码边关注行情的软件,在coding时候不错过赚钱的机会!</description>
-    <version>1.0</version>
+    <description><![CDATA[
+        <p>Stocks is an IDEA plugin. Allows you to focus on stocks while coding. Note: Currently only A-Stock are supported. </p>
+        <br />
+        <p>股票行情来源于网络，不作为投资参考意见</p>
+        <br />
+        <p>如有建议或者问题，请直接在GitHub反馈，欢迎Star <a href='https://github.com/vikde/idea-plugin-stocks'>idea-plugin-stocks</a></p>
+    ]]></description>
+    <version>1.0.1</version>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="Stocks" anchor="right" factoryClass="com.github.vikde.idea.plugin.stocks.StocksToolWindowFactory" secondary="true" icon="AllIcons.General.Locate"/>
+        <toolWindow id="Stocks" anchor="right" factoryClass="com.github.vikde.idea.plugin.stocks.StocksToolWindowFactory"
+                    secondary="true" icon="AllIcons.General.Locate"/>
     </extensions>
 
     <actions>

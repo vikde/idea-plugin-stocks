@@ -143,15 +143,4 @@ public final class StoredConfigManager {
         storedConfig.setStockList(stockList);
         updateConfig(storedConfig);
     }
-
-    /**
-     * 获取股票
-     */
-    public static List<StoredStock> getStoredStockList() {
-        StoredConfig storedConfig = loadConfig();
-        if (storedConfig == null) {
-            storedConfig = new StoredConfig();
-        }
-        return storedConfig.getStockList();
-    }
 }

@@ -43,7 +43,7 @@ public class StocksToolWindowFactory implements ToolWindowFactory {
         upBtn.setPreferredSize(new Dimension(45, 30));
         JButton downBtn = new JButton("下移");
         downBtn.setPreferredSize(new Dimension(45, 30));
-        JButton configBtn = new JButton("配置");
+        JButton configBtn = new JButton("设置");
         configBtn.setPreferredSize(new Dimension(45, 30));
         JPanel btnPanel = new JPanel();
         btnPanel.setLayout(new HorizontalLayout(5, SwingConstants.CENTER));
