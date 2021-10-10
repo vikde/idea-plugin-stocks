@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.github.vikde.idea.plugin.stocks</id>
+    <name>Stocks</name>
+    <vendor email="vikde@qq.com" url="https://github.com/vikde">vikde</vendor>
+
+    <description>Stocks是一个可以在idea里面边写代码边关注行情的软件,在coding时候不错过赚钱的机会!</description>
+    <version>1.0</version>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Stocks" anchor="right" factoryClass="com.github.vikde.idea.plugin.stocks.StocksToolWindowFactory" secondary="true" icon="AllIcons.General.Locate"/>
+    </extensions>
+
+    <actions>
+    </actions>
+</idea-plugin>
