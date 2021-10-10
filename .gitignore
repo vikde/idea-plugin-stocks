@@ -20,4 +20,4 @@ HELP.md
 /out/
 gradlew
 gradlew.bat
-gradle/*
+gradle
